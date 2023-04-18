@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.tb_nbNote = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tb_pourc5 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -72,15 +74,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Matière = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Coefficient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Moyenne = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Coefficient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tb_moyenne = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.tb_nbNote = new System.Windows.Forms.TextBox();
             this.pnl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +128,24 @@
             this.pnl1.Size = new System.Drawing.Size(446, 268);
             this.pnl1.TabIndex = 0;
             this.pnl1.Visible = false;
+            // 
+            // tb_nbNote
+            // 
+            this.tb_nbNote.Location = new System.Drawing.Point(49, 241);
+            this.tb_nbNote.Name = "tb_nbNote";
+            this.tb_nbNote.ReadOnly = true;
+            this.tb_nbNote.Size = new System.Drawing.Size(19, 20);
+            this.tb_nbNote.TabIndex = 39;
+            this.tb_nbNote.Text = "1";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(3, 244);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(43, 13);
+            this.label27.TabIndex = 38;
+            this.label27.Text = "Note n°";
             // 
             // label20
             // 
@@ -476,10 +494,10 @@
             this.Coefficient});
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
-            listViewGroup4.Header = "ListViewGroup";
-            listViewGroup4.Name = "listViewGroup1";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup4});
+            listViewGroup1});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(798, 29);
             this.listView1.Name = "listView1";
@@ -487,21 +505,22 @@
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // Matière
             // 
             this.Matière.Text = "Matière";
             this.Matière.Width = 100;
             // 
-            // Coefficient
-            // 
-            this.Coefficient.Text = "Coefficient";
-            this.Coefficient.Width = 100;
-            // 
             // Moyenne
             // 
             this.Moyenne.Text = "Moyenne";
             this.Moyenne.Width = 100;
+            // 
+            // Coefficient
+            // 
+            this.Coefficient.Text = "Coefficient";
+            this.Coefficient.Width = 100;
             // 
             // tb_moyenne
             // 
@@ -544,24 +563,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(231, 346);
             this.richTextBox1.TabIndex = 40;
             this.richTextBox1.Text = "";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(3, 244);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(43, 13);
-            this.label27.TabIndex = 38;
-            this.label27.Text = "Note n°";
-            // 
-            // tb_nbNote
-            // 
-            this.tb_nbNote.Location = new System.Drawing.Point(49, 241);
-            this.tb_nbNote.Name = "tb_nbNote";
-            this.tb_nbNote.ReadOnly = true;
-            this.tb_nbNote.Size = new System.Drawing.Size(19, 20);
-            this.tb_nbNote.TabIndex = 39;
-            this.tb_nbNote.Text = "1";
             // 
             // Form1
             // 

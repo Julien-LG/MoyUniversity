@@ -142,5 +142,10 @@ namespace MoyUniversity
             pnl1.Visible = false;
             bt_ajouterMatiere.Visible = false;
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
